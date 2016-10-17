@@ -5,7 +5,7 @@ public class Funcionario {
 	String nome;
 	String departamento;
 	double salario;
-	String dataDeEntrada;
+	Data dataDeEntrada;
 	String rg;
 	boolean estaNaEmpresa;
 	
@@ -20,12 +20,12 @@ public class Funcionario {
 	}
 	
 	public void mostra(){
-		System.out.println("Nome: "+ nome);
-		System.out.println("Departamento: "+ departamento);
-		System.out.println("Salario: "+ salario);
-		System.out.println("Data entrada: "+ dataDeEntrada);
-		System.out.println("RG: "+ rg);
-		System.out.println("Está na empresa: "+ estaNaEmpresa);		
-	}
+		System.out.println("Nome: "+ this.nome);
+		System.out.println("Departamento: "+ this.departamento);
+		System.out.println("Salario: "+ this.salario);		
+		System.out.println("RG: "+ this.rg);
+		System.out.println("Está na empresa: "+ this.estaNaEmpresa);
+		System.out.println("Data de entrada: "+ dataDeEntrada.Formatada());
+	}	
 		
 }
