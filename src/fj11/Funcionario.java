@@ -14,8 +14,18 @@ public class Funcionario {
 		
 	}
 	
-		public double calculaGanhoAnual(){
+	public double calculaGanhoAnual(){
 		this.salario = salario * 12;
 		return salario;
 	}
+	
+	public void mostra(){
+		System.out.println("Nome: "+ nome);
+		System.out.println("Departamento: "+ departamento);
+		System.out.println("Salario: "+ salario);
+		System.out.println("Data entrada: "+ dataDeEntrada);
+		System.out.println("RG: "+ rg);
+		System.out.println("Está na empresa: "+ estaNaEmpresa);		
+	}
+		
 }
