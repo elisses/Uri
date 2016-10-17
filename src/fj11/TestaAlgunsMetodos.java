@@ -19,7 +19,16 @@ public class TestaAlgunsMetodos {
 		//resultado
 		
 		System.out.println(minhaConta.saldo);
-
+		
+		//com retorno
+		minhaConta.saldo = 1000;
+		boolean consegui = minhaConta.saca(2000);
+			if (consegui) {
+				System.out.println("Consegui sacar");
+			} 
+			else {
+					System.out.println("Não consegui sacar");
+			}
 	}
 
 }
